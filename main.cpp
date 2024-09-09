@@ -5,19 +5,19 @@ using namespace std;
 
 int main(){
 
-    //Initialize variables
-    string movie;
-    int ADULTtickets, CHILDtickets;
-
     //Display purpose of program
     cout << "This program will calculate the Gross and Net Box Office Profit" 
     "and the Distributer's Profit of a movie playing in the theater." << endl;
 
     //Display instruction to users
-    cout << "Please, enter the following.";
+    cout << "Please, enter the following." << endl;
 
-    //Ask values
-    cout << "Name of movie: ";
+    //Initialize variables
+    string movie;
+    int ADULTtickets, CHILDtickets;
+
+    //Get values
+    cout << "Name of movie: " << setw(18);
     cin >> movie;
 
     cout << "Amount of Adult tickets sold: ";
@@ -25,6 +25,11 @@ int main(){
 
     cout << "Amount of Child tickets sold: ";
     cin >> CHILDtickets;
+
+    //Calculate the values
+
+
+    //Display the results
 
 
 
