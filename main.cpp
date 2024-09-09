@@ -7,26 +7,31 @@ int main(){
 
     //Display purpose of program
     cout << "This program will calculate the Gross and Net Box Office Profit" 
-    "and the Distributer's Profit of a movie playing in the theater." << endl;
+    "and the Distributor's Profit of a movie playing in the theater." << endl;
 
     //Display instruction to users
     cout << "Please, enter the following:" << endl;
 
     //Initialize variables
     string movie;
-    int ADULTtickets, CHILDtickets;
+    double adultPRICE, childPRICE, ADULTtickets, CHILDtickets, TOTALadult, TOTALchild, gross, net, distributor;
+   
+    adultPRICE = 10.00
+    childPRICE = 6.00
 
     //Get values
-    cout << "Name of movie: ";
+    cout << "Enter the name of the movie: ";
     cin >> movie;
 
-    cout << "Amount of Adult tickets sold: ";
+    cout << "Enter the amount of adult tickets sold: ";
     cin >> ADULTtickets;
 
-    cout << "Amount of Child tickets sold: ";
+    cout << "Enter the amount of child tickets sold: ";
     cin >> CHILDtickets;
 
     //Calculate the values
+    
+
 
 
     //Display the results
