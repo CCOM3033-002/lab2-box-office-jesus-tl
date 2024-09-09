@@ -10,14 +10,14 @@ int main(){
     "and the Distributer's Profit of a movie playing in the theater." << endl;
 
     //Display instruction to users
-    cout << "Please, enter the following." << endl;
+    cout << "Please, enter the following:" << endl;
 
     //Initialize variables
     string movie;
     int ADULTtickets, CHILDtickets;
 
     //Get values
-    cout << "Name of movie: " << setw(18);
+    cout << "Name of movie: ";
     cin >> movie;
 
     cout << "Amount of Adult tickets sold: ";
