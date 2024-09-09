@@ -12,6 +12,15 @@ int main(){
     cout << "Please, enter the following.";
 
     //Ask values
+    cout << "Name of movie: ";
+    getline(cin, movie);
+
+    cout << "Amount of Adult tickets sold: ";
+    getline(cin, ADULTtickets);
+
+    cout << "Amount of Child tickets sold: "
+    getline(cin, CHILDtickets);
+
     
 
 
