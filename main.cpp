@@ -1,27 +1,32 @@
 // Jesus M Torres Luquis, jesus-tl, 801 20 3215
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main(){
 
+    //Initialize variables
+    string movie;
+    int ADULTtickets, CHILDtickets;
+
     //Display purpose of program
     cout << "This program will calculate the Gross and Net Box Office Profit" 
-    "and the Distributer's Profit of a movie playing in the theater.";
+    "and the Distributer's Profit of a movie playing in the theater." << endl;
 
     //Display instruction to users
     cout << "Please, enter the following.";
 
     //Ask values
     cout << "Name of movie: ";
-    getline(cin, movie);
+    cin >> movie;
 
     cout << "Amount of Adult tickets sold: ";
-    getline(cin, ADULTtickets);
+    cin >> ADULTtickets;
 
-    cout << "Amount of Child tickets sold: "
-    getline(cin, CHILDtickets);
+    cout << "Amount of Child tickets sold: ";
+    cin >> CHILDtickets;
 
-    
+
 
 
 return 0;
