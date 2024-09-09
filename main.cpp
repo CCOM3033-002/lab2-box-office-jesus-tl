@@ -6,11 +6,11 @@ using namespace std;
 int main(){
 
     //Display purpose of program
-    cout << "This program will calculate the Gross and Net Box Office Profit" 
-    "and the Distributor's Profit of a movie playing in the theater." << endl;
+    cout << "This program will calculate the Gross and Net Box Office Profit\n" 
+    "and the Distributor's Profit of a movie playing in the theater.\n" << endl;
 
     //Display instruction to users
-    cout << "Please, enter the following:" << endl;
+    cout << "Please, enter the following:\n" << endl;
 
     //Initialize variables
     string movie;
@@ -22,10 +22,10 @@ int main(){
     cout << "Enter the name of the movie: ";
     cin >> movie;
 
-    cout << "Enter the amount of adult tickets sold: ";
+    cout << "\nEnter the amount of adult tickets sold: ";
     cin >> ADULTtickets;
 
-    cout << "Enter the amount of child tickets sold: ";
+    cout << "\nEnter the amount of child tickets sold: ";
     cin >> CHILDtickets;
 
     //Calculate the values
@@ -40,6 +40,13 @@ int main(){
     distributor = gross - net;
 
     //Display the results
+    cout << "Adult Tickets Sold: " << setw(8) << ADULTtickets << endl;
+
+    cout << "Child Tickets Sold: " << setw(8) << CHILDtickets << endl;
+
+    cout << "Gross Box Office Profit: " << setprecision(2) << setw(8) << gross << endl;
+
+    
 
 
 
