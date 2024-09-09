@@ -15,9 +15,8 @@ int main(){
     //Initialize variables
     string movie;
     double adultPRICE, childPRICE, ADULTtickets, CHILDtickets, TOTALadult, TOTALchild, gross, net, distributor;
-   
-    adultPRICE = 10.00
-    childPRICE = 6.00
+    adultPRICE = 10.00;
+    childPRICE = 6.00;
 
     //Get values
     cout << "Enter the name of the movie: ";
@@ -30,9 +29,15 @@ int main(){
     cin >> CHILDtickets;
 
     //Calculate the values
-    
+    TOTALadult = ADULTtickets * adultPRICE; //Adult tickets amount total
 
+    TOTALchild = CHILDtickets * childPRICE; //Child tickets amount total
 
+    gross = TOTALadult + TOTALchild;
+
+    net = gross * 0.20;
+
+    distributor = gross - net;
 
     //Display the results
 
