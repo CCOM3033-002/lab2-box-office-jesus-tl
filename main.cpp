@@ -40,11 +40,21 @@ int main(){
     distributor = gross - net;
 
     //Display the results
-    cout << "Adult Tickets Sold: " << setw(8) << ADULTtickets << endl;
+    cout << "\nMovie Name: " << setw(18) << '"' << movie << '"' << endl;
 
-    cout << "Child Tickets Sold: " << setw(8) << CHILDtickets << endl;
+    cout << "Adult Tickets Sold: " << setw(18) << ADULTtickets << endl;
 
-    cout << "Gross Box Office Profit: " << setprecision(2) << setw(8) << gross << endl;
+    cout << "Child Tickets Sold: " << setw(18) << CHILDtickets << endl;
+
+    cout << "Gross Box Office Profit: " << setw(15) << "$" << setw(18) 
+    << setprecision(2) << gross << endl;
+
+    cout << "Net Box Office Profit: " << setw(15) << "$" << setw(18)
+    << setprecision(2) << net << endl;
+
+    cout << "Amount Paid to Distributors: " << setw(15) << "$" << setw(18)
+    << setprecision(2) << distributor << endl;
+
 
     
 
