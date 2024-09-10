@@ -20,7 +20,7 @@ int main(){
     childPRICE = 6.00;
 
     //Get values
-    cout << "Enter the name of the movie:" << setw(2);
+    cout << "Enter the name of the movie: " << setw(2);
     cin >> movie;
 
     cout << "\nEnter the amount of adult tickets sold: ";
