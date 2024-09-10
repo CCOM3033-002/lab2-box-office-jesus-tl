@@ -21,7 +21,7 @@ int main(){
 
     //Get values
     cout << "Enter the name of the movie: " << setw(2);
-    cin >> movie;
+    getline(cin, movie);
 
     cout << "\nEnter the amount of adult tickets sold: ";
     cin >> ADULTtickets;
