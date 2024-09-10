@@ -44,7 +44,7 @@ int main(){
     cout << "\nMovie Name:" << setw(19) << '"' << movie << '"' << endl;
 
     cout << "Adult Tickets Sold:";
-    cout << setw(15) << right << ADULTtickets << endl;
+    cout << setw(15) << ADULTtickets << endl;
 
     cout << "Child Tickets Sold:"; 
     cout << setw(15) << CHILDtickets << endl;
