@@ -14,12 +14,13 @@ int main(){
 
     //Initialize variables
     string movie;
-    double adultPRICE, childPRICE, ADULTtickets, CHILDtickets, TOTALadult, TOTALchild, gross, net, distributor;
+    int adultPRICE, childPRICE, ADULTtickets, CHILDtickets;
+    double TOTALadult, TOTALchild, gross, net, distributor;
     adultPRICE = 10.00;
     childPRICE = 6.00;
 
     //Get values
-    cout << "Enter the name of the movie: ";
+    cout << "Enter the name of the movie:" << setw(2);
     cin >> movie;
 
     cout << "\nEnter the amount of adult tickets sold: ";
@@ -29,37 +30,33 @@ int main(){
     cin >> CHILDtickets;
 
     //Calculate the values
-    TOTALadult = ADULTtickets * adultPRICE; //Adult tickets amount total
+    TOTALadult = ADULTtickets * adultPRICE; //Adult tickets amount
 
-    TOTALchild = CHILDtickets * childPRICE; //Child tickets amount total
+    TOTALchild = CHILDtickets * childPRICE; //Child tickets amount 
 
-    gross = TOTALadult + TOTALchild;
+    gross = TOTALadult + TOTALchild; //Gross Box Office Profit amount
 
-    net = gross * 0.20;
+    net = gross * 0.20; //Net Box Office Profit amount
 
-    distributor = gross - net;
+    distributor = gross - net; //Amount paid to distributor
 
     //Display the results
-    cout << "\nMovie Name: " << setw(18) << '"' << movie << '"' << endl;
+    cout << "\nMovie Name:" << setw(19) << '"' << movie << '"' << endl;
 
-    cout << "Adult Tickets Sold: " << setw(18) << ADULTtickets << endl;
+    cout << "Adult Tickets Sold:";
+    cout << setw(15) << right << ADULTtickets << endl;
 
-    cout << "Child Tickets Sold: " << setw(18) << CHILDtickets << endl;
+    cout << "Child Tickets Sold:"; 
+    cout << setw(15) << CHILDtickets << endl;
 
-    cout << "Gross Box Office Profit: " << setw(15) << "$" << setw(18) 
-    << setprecision(2) << gross << endl;
+    cout << "Gross Box Office Profit:"; 
+    cout << setw(6) << "$" << setw(9) << setprecision(2) << fixed << gross << endl;
 
-    cout << "Net Box Office Profit: " << setw(15) << "$" << setw(18)
-    << setprecision(2) << net << endl;
+    cout << "Net Box Office Profit:";
+    cout << setw(8) << "$" << setw(9) << setprecision(2) << fixed << net << endl;
 
-    cout << "Amount Paid to Distributors: " << setw(15) << "$" << setw(18)
-    << setprecision(2) << distributor << endl;
-
-
-    
-
-
-
+    cout << "Amount Paid to Distributors:";
+    cout << setw(2) << "$" << setw(9) << setprecision(2) << fixed << distributor << endl;
 
 return 0;
 
